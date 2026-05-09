@@ -317,6 +317,13 @@ if (digitalRead(SW)== false and currentMillis - millisPrevios >= miniIntervalo){
   tiempoPomo=1500*pos;
   tiempoDesc=300*pos;
   tiempoDescL=600*pos;
+  digitalWrite(7, LOW);
+  digitalWrite(6, LOW);
+  digitalWrite(5, LOW);
+  digitalWrite(3, LOW);
+  digitalWrite(2, LOW);
+  digitalWrite(4, LOW);
+  digitalWrite(A0, LOW);
   beep();
   pomodoro();
 }
